@@ -1,0 +1,11 @@
+id,title,owner,status,priority,created,completed
+1,Set up Claude Code,alex,done,high,2026-06-01,2026-06-01
+2,Clone the demo repo,alex,done,high,2026-06-01,2026-06-02
+3,Fix the registration bug,priya,in_progress,high,2026-06-03,
+4,Write unit tests,priya,todo,medium,2026-06-03,
+5,Refactor auth module,sam,todo,low,2026-06-04,
+6,Update the README,sam,done,low,2026-06-04,2026-06-05
+7,Add usage dashboard,alex,in_progress,medium,2026-06-05,
+8,Review pull request,priya,done,high,2026-06-06,2026-06-06
+9,Deploy to staging,sam,todo,high,2026-06-07,
+10,Collect user feedback,alex,todo,medium,2026-06-08,

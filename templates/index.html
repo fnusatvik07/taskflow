@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TaskFlow</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 640px;
+           margin: 48px auto; color: #1f1e1d; }
+    h1 { color: #d97757; }
+    .bar { background: #eee; border-radius: 8px; overflow: hidden; height: 18px; }
+    .bar > span { display: block; height: 100%; background: #d97757; }
+    li.done { text-decoration: line-through; color: #888; }
+    a { color: #d97757; }
+  </style>
+</head>
+<body>
+  <h1>TaskFlow</h1>
+  <p>{{ rate }}% of tasks complete</p>
+  <div class="bar"><span style="width: {{ rate }}%"></span></div>
+  <ul>
+    {% for task in tasks %}
+      <li class="{{ 'done' if task.done else '' }}">{{ task.title }}</li>
+    {% endfor %}
+  </ul>
+  <p><a href="/register">Register a new user</a></p>
+</body>
+</html>
